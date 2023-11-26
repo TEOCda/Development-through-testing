@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class PhoneBook {
@@ -13,5 +11,9 @@ public class PhoneBook {
             }
         }
         return phoneBook.size();
+    }
+
+    public String findByNumber (int number) {
+        return null;
     }
 }

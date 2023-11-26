@@ -25,4 +25,11 @@ public class PhoneBookTest {
         phoneBook.add("Eva", 123);
         Assertions.assertEquals(123, phoneBook.findByName("Eva"));
     }
+
+    @Test
+    void printAllNamesTest() {
+        phoneBook.add("Eva", 123);
+        phoneBook.add("Adam", 1235);
+        Assertions.assertEquals("Adam, Eva", phoneBook.printAllNames());
+    }
 }

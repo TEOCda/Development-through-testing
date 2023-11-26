@@ -30,6 +30,6 @@ public class PhoneBookTest {
     void printAllNamesTest() {
         phoneBook.add("Eva", 123);
         phoneBook.add("Adam", 1235);
-        Assertions.assertEquals("Adam, Eva", phoneBook.printAllNames());
+        Assertions.assertEquals("[Adam, Eva]", phoneBook.printAllNames());
     }
 }

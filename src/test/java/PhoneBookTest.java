@@ -19,4 +19,10 @@ public class PhoneBookTest {
         phoneBook.add("Eva", 123);
         Assertions.assertEquals("Eva", phoneBook.findByNumber(123));
     }
+
+    @Test
+    void findByNameTest() {
+        phoneBook.add("Eva", 123);
+        Assertions.assertEquals(123, phoneBook.findByName("Eva"));
+    }
 }

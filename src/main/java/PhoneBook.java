@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PhoneBook {
-     Map<String, Integer> phoneBook = new HashMap<>();
+     private Map<String, Integer> phoneBook = new HashMap<>();
 
     public int add (String name, int number) {
         for (int i = 0; i < phoneBook.size() + 1; i++) {
@@ -14,6 +14,11 @@ public class PhoneBook {
     }
 
     public String findByNumber (int number) {
+        for (String k : phoneBook.keySet()) {
+            if (phoneBook.get(k).equals(number)) {
+                return k;
+            }
+        }
         return null;
     }
 }
